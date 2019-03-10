@@ -6,10 +6,29 @@
   padding: 1%;
   background-color: black;
 }
+.headerImage{
+  
+}
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
 
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
 
-
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+html{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+}
 /*MatchList */
 {
   box-sizing: border-box;
@@ -68,7 +87,10 @@ ul li.checked::before {
   height: 15px;
   width: 7px;
 }
-
+/* Hold Right */
+.holdright{
+  margin-right: auto;
+}
 /* Style the close button */
 .close {
   position: absolute;
