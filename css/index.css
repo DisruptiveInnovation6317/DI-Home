@@ -1,15 +1,4 @@
 
-#navClass{
-  width: 15%;
-  margin: left;
-  margin: %;
-  padding: 1%;
-  background-color: black;
-}
-.headerImage{
-  
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -28,6 +17,14 @@ html{
 }
 h1{
   text-align: center;
+  font-family: Lobster;
+  font-size: 55px;
+}
+h5{
+  text-align: center;
+  font-family: Lobster;
+  font-size: 55px;
+  color: red;
 }
 /*MatchList */
 {
@@ -35,13 +32,13 @@ h1{
 }
 
 /* Remove margins and padding from the list */
-ul {
+.schedule-list {
   margin: 0;
   padding: 0;
 }
 
 /* Style the list items */
-ul li {
+.scedule-list {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -58,7 +55,7 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+.schedule-list :nth-child(odd) {
   background: #f9f9f9;
 }
 

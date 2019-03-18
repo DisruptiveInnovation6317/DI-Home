@@ -2,17 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
     <title>PitHome</title>
   </head>
   <body>
 
-<img src="images/DRuptive.jpg" alt="DI Logo">
+<h1>Disruptive Innovation</h1>
+<!-- <img src="images/DRuptive.jpg" alt="DI Logo"> -->
 <div class="navClass">
 <nav>
-  <ul>
-    <li class="navClass"><a href="lastmatch.html">Last Match</a></li>
+  <ul class="navUL">
+    <li class="navLI"><a href="lastmatch.html">Last Match</a></li>
   </ul>
 </nav>
 </div>
@@ -30,76 +33,22 @@
       <span onclick="newElement()" class="addBtn">Add</span>
     </div>
 
-    <ul id="myUL">
+    <ul class="schedule-list" id="myUL">
 
     </ul>
 
-    <script>
-    // Create a "close" button and append it to each list item
-    var myNodelist = document.getElementsByTagName("LI");
-    var i;
-    for (i = 0; i < myNodelist.length; i++) {
-      var span = document.createElement("SPAN");
-      var txt = document.createTextNode("\u00D7");
-      span.className = "close";
-      span.appendChild(txt);
-      myNodelist[i].appendChild(span);
-    }
+<script src="javaScript/actions.js">
 
-    // Click on a close button to hide the current list item
-    var close = document.getElementsByClassName("close");
-    var i;
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
-      }
-    }
-
-    // Add a "checked" symbol when clicking on a list item
-    var list = document.querySelector('ul');
-    list.addEventListener('click', function(ev) {
-      if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-      }
-    }, false);
-
-    // Create a new list item when clicking on the "Add" button
-    function newElement() {
-      var li = document.createElement("li");
-      var inputValue = document.getElementById("myInput").value;
-      var t = document.createTextNode(inputValue);
-      li.appendChild(t);
-      if (inputValue === '') {
-        alert("You must write something!");
-      } else {
-        document.getElementById("myUL").appendChild(li);
-      }
-      document.getElementById("myInput").value = "";
-
-      var span = document.createElement("SPAN");
-      var txt = document.createTextNode("\u00D7");
-      span.className = "close";
-      span.appendChild(txt);
-      li.appendChild(span);
-
-      for (i = 0; i < close.length; i++) {
-        close[i].onclick = function() {
-          var div = this.parentElement;
-          div.style.display = "none";
-        }
-      }
-    }
-    </script></div>
+</script>
+  </div>
   <div class="grid-item">3</div>
 
 </div>
 
-<ul>
-  <li></li>
-</ul>
 
 <h3>Our Socials</h3>
-<footer><a href="https://twitter.com/West_INSPIRE"><i class="fab fa-twitter"></i></a></footer>
+<ul>
+  <img src="images/INSPRSC.png" alt="West Inspire Snapchat" height="150px" width="150px"> <img src="images/Twitter.png" alt="QR for WestInspire Twitter" height="150px" width="150px"> <img src="images/Facebook.png" alt="QR for WestInspire Facebook" height="150px" width="150px">
+</ul>
   </body>
 </html>
