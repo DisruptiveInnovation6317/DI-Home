@@ -12,6 +12,7 @@
   font-size: 30px;
   text-align: center;
 }
+
 html{
   background-color: grey;
 }
@@ -20,10 +21,10 @@ h1{
   font-family: Lobster;
   font-size: 55px;
 }
-h5{
-  text-align: center;
+h3{
+  text-align: left;
+  font-size: 30px;
   font-family: Lobster;
-  font-size: 55px;
   color: red;
 }
 /*MatchList */
@@ -65,14 +66,14 @@ ul li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+.scedule-list, .checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+.scedule-list, .checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
