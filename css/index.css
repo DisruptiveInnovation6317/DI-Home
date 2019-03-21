@@ -66,35 +66,21 @@ ul li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
-.scedule-list, .checked {
-  background: #888;
-  color: #fff;
+.checked {
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
-.scedule-list, .checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
 /* Hold Right */
 .holdright{
   margin-right: auto;
 }
+
 /* Style the close button */
 .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
+  left: 100px;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .close:hover {

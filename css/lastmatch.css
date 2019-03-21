@@ -11,3 +11,13 @@
   font-size: 30px;
   text-align: center;
 }
+
+html {
+  background-color: grey;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 85%;
+}
